@@ -49,18 +49,20 @@ public class UserController {
 		return new ResponseEntity<User>(this.userService.addUser(user), HttpStatus.OK);
 	}
 	
-	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
-	@DeleteMapping(value="/delete", consumes = MediaType.APPLICATION_JSON_VALUE)
-			public void deleteUser(@RequestBody User user){
+	@CrossOrigin(origins = "*", maxAge = 3600)
+	@DeleteMapping(value="/delete/{userID}",  produces = MediaType.APPLICATION_JSON_VALUE)
+			public ResponseEntity<Long> deleteUser(@PathVariable("userID") Long userID){
 		try {
 			log.info("Controller - deleteUser call for User.");
-			userService.deleteUser(user);
+			userService.deleteUser(userID);
 		}
 		catch (Exception e) {
 			log.error("Controller - deleteUser call returned error : " +e.getMessage());
 			e.printStackTrace();
 		}
 		
+		
+		return new ResponseEntity<Long>(userID, HttpStatus.OK);
 			
 	}
 	
