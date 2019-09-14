@@ -7,9 +7,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table (name = "parenttask")
-public class ParentTask {
+public class Parent {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +21,14 @@ public class ParentTask {
 	
 	@Column(name = "parent_task", nullable = false, length=50)
 	private String parentTask;
+
+	public String getParentTask() {
+		return parentTask;
+	}
+
+	public void setParentTask(String parentTask) {
+		this.parentTask = parentTask;
+	}
 
 	public long getParentId() {
 		return parentId;

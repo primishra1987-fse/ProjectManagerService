@@ -14,26 +14,49 @@ import javax.persistence.Table;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table (name = "task")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "taskId", scope = Task.class)
 public class Task {
 
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "task_id")
-	private Integer taskId;
+	private Long taskId;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = true)
 	@JoinColumn(name = "parentId")
 	@OnDelete(action = OnDeleteAction.CASCADE)
-	private ParentTask parent;
+	private Parent parent;
 
-	@ManyToOne(fetch = FetchType.LAZY, optional = true)
+	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	@JoinColumn(name = "projectId")
+	//@JsonBackReference
+	 @JsonIdentityReference(alwaysAsId = false)
 	private Project project;
 	
+	
+	@ManyToOne(fetch = FetchType.LAZY, optional = true)
+	@OnDelete(action = OnDeleteAction.CASCADE)
+	@JoinColumn(name = "userId")
+	private User user;
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	@Column(name = "task" , nullable=false, length=50)
 	private String taskName;
 
@@ -49,19 +72,19 @@ public class Task {
 	@Column(name = "end_date")
 	private LocalDate endDate;
 
-	public Integer getTaskId() {
+	public Long getTaskId() {
 		return taskId;
 	}
 
-	public void setTaskId(Integer taskId) {
+	public void setTaskId(Long taskId) {
 		this.taskId = taskId;
 	}
 
-	public ParentTask getParent() {
+	public Parent getParent() {
 		return parent;
 	}
 
-	public void setParent(ParentTask parent) {
+	public void setParent(Parent parent) {
 		this.parent = parent;
 	}
 
@@ -103,6 +126,15 @@ public class Task {
 
 	public void setStartDate(LocalDate startDate) {
 		this.startDate = startDate;
+	}
+
+
+	public LocalDate getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(LocalDate endDate) {
+		this.endDate = endDate;
 	}
 
 	

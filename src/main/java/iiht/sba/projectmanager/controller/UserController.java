@@ -32,7 +32,7 @@ public class UserController {
 	private UserService userService;
 	
 	@CrossOrigin(origins = "*", maxAge = 3600)
-	@GetMapping(value = "allUsers", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "/allUsers", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<User>> getAllUsers() {
 		log.info("<-- Inside getAllUsers -->");
 		List<User> users = this.userService.getAllUser();
@@ -60,8 +60,6 @@ public class UserController {
 			log.error("Controller - deleteUser call returned error : " +e.getMessage());
 			e.printStackTrace();
 		}
-		
-		
 		return new ResponseEntity<Long>(userID, HttpStatus.OK);
 			
 	}
