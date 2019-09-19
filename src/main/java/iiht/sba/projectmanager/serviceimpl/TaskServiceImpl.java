@@ -104,21 +104,20 @@ public class TaskServiceImpl implements TaskService {
 			if (!opTask.isPresent()) {
 				throw new EmptyResultDataAccessException(1);
 			}
-			System.out.println("getTask by Id -- " +opTask.get().getProject().getProjectName());
+			
 		return this.getTaskModel(opTask.get());
 	}
 	
 	@Override
 	public TaskModel editTask(TaskModel task, Long taskId) {
 		 Optional<Task> task1 = this.taskDao.findById(taskId); 
-		 System.out.println("edit --" +task1.get().getTaskName());
-		 System.out.println("task object --" +task.getTaskName());
+		
 		 task1.get().setUser(task.getUser());
 		 task1.get().setTaskName(task.getTaskName());
 		 task1.get().setStatus(task.getStatus());
 		 task1.get().setStartDate(task.getStartDate());
 		 task1.get().setEndDate(task.getEndDate());
-		 System.out.println(" edit task task' project -- " +task.getProject().getProjectId());
+		 
 		 task1.get().setProject(task.getProject());
 		 task1.get().setPriority(task.getPriority());
 		 task1.get().setParent(task.getParent());

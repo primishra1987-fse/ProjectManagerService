@@ -45,7 +45,7 @@ public class TaskController {
 	@GetMapping(value = "/getAllParent",  produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public  ResponseEntity<List<Parent>> getAllParent() {
 		List<Parent> parentList = this.taskService.getAllParentTask();
-		System.out.println(" Parent task list count - " +parentList.size());
+		
 		
 		
 		return new ResponseEntity<List<Parent>>(parentList, HttpStatus.OK);
@@ -55,14 +55,14 @@ public class TaskController {
 	@GetMapping(value = "/getAllTasks",  produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public  ResponseEntity<List<TaskModel>> getAllTask() {
 		List<TaskModel> taskList = this.taskService.getAllTask();
-		System.out.println(" Task list count - " +taskList.size());
+		
 		return new ResponseEntity<List<TaskModel>>(taskList, HttpStatus.OK);
 	}
 	
 	@CrossOrigin(origins = "*", maxAge = 3600)
 	@PutMapping(value="/suspend/{taskId}",  produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 			public TaskModel endTask(@PathVariable("taskId") Long taskId){
-			System.out.println(" end task request for task Id " +taskId);
+			
 			
 			return taskService.endTask(taskId);
 		
@@ -73,7 +73,7 @@ public class TaskController {
 	@RequestMapping(value = "/update/{taskId}", method = RequestMethod.PUT, produces = "application/json", consumes = {
 			"application/json" })
 	public TaskModel editTask(@RequestBody TaskModel taskModel,@PathVariable("taskId") Long taskId){
-		System.out.println(" update task request for task Id " +taskId);
+		
 		
 		return taskService.editTask(taskModel,taskId);
 		
@@ -86,7 +86,7 @@ public class TaskController {
 	@RequestMapping(value="/getTask/{taskId}", method=RequestMethod.GET)
 	public ResponseEntity<TaskModel> getTask(@PathVariable("taskId") Long taskId) {
 		TaskModel getTask = new TaskModel();
-		System.out.println(" get task with Id -- " + taskId);
+		
 		getTask = taskService.getTaskById(taskId);
 		return new ResponseEntity<TaskModel>(getTask, HttpStatus.OK);
 		//return ResponseEntity.ok().header("Custom-Header", "getTaskById").body(getTask);
