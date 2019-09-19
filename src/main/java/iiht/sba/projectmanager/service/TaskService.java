@@ -4,18 +4,21 @@ import java.util.List;
 
 import iiht.sba.projectmanager.entity.Parent;
 import iiht.sba.projectmanager.entity.Task;
+import iiht.sba.projectmanager.model.TaskModel;
 
 public interface TaskService {
-	List<Task> getAllTask();
+	List<TaskModel> getAllTask();
+
 	List<Parent> getAllParentTask();
-	
-	Task addTask(Task task);
+
+	TaskModel addTask(TaskModel task);
+
 	Parent addParent(Task parentTask);
-	
-	Task getTaskById(Long taskId);
-	
-	Task editTask(Task task, Long taskId);
-	Task endTask(Long taskId);
-	
+
+	TaskModel getTaskById(Long taskId);
+
+	TaskModel editTask(TaskModel taskModel, Long taskId);
+
+	TaskModel endTask(Long taskId);
 
 }

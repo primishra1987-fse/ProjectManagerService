@@ -27,7 +27,6 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table (name="project")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "projectId", scope = Project.class)
 public class Project {
 	
 	@Id
@@ -59,6 +58,18 @@ public class Project {
 	
 	@Transient
 	private int noOfTask;
+	
+	@Transient
+	private int nofCompTask;
+	
+	public int getNofCompTask() {
+		return nofCompTask;
+	}
+
+	public void setNofCompTask(int nofCompTask) {
+		this.nofCompTask = nofCompTask;
+	}
+
 	public int getNoOfTask() {
 		return noOfTask;
 	}
@@ -70,7 +81,7 @@ public class Project {
 	/** Change for Set of Task in Project*/
 	
 	
-	@JsonIdentityReference(alwaysAsId = false)
+	@JsonManagedReference
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "project", fetch = FetchType.EAGER)
 	private Set<Task> taskList = new HashSet<Task>();
 	

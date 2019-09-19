@@ -43,6 +43,7 @@ public class ProjectServiceImpl implements ProjectService {
 		//System.out.println(" count of projects " +projects.get(0).getProjectName());
 		for (Project prj : projects) {
 			prj.setNoOfTask(getTaskListByProject(prj.getProjectId()).size());
+			prj.setNofCompTask(getCompletedTask(prj.getProjectId()));
 			prjList.add(prj);
 		}
 		return prjList;
@@ -75,4 +76,18 @@ public class ProjectServiceImpl implements ProjectService {
 		  return taskList;
 		  }
 	 
+	  @Override
+	  
+	  public int getCompletedTask(Long projectId) {
+		  System.out.println("task for project - " +projectId);
+		  Set<Task> taskList = new HashSet<Task>(); 
+		  taskList = getTaskListByProject(projectId);
+		  int completedTask = 0;
+		  for (Task task : taskList) {
+			 if( task.getStatus() != null)
+				 completedTask++;
+		  }
+		  System.out.println("completed Task - " +completedTask);
+		  return completedTask;
+	  }
 }

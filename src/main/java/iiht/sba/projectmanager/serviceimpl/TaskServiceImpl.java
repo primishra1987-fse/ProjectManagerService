@@ -13,7 +13,7 @@ import iiht.sba.projectmanager.dao.ParentTaskDao;
 import iiht.sba.projectmanager.dao.TaskDao;
 import iiht.sba.projectmanager.entity.Parent;
 import iiht.sba.projectmanager.entity.Task;
-
+import iiht.sba.projectmanager.model.TaskModel;
 import iiht.sba.projectmanager.service.TaskService;
 @Service
 public class TaskServiceImpl implements TaskService {
@@ -25,13 +25,58 @@ public class TaskServiceImpl implements TaskService {
 	ParentTaskDao parentTaskDao;
 	
 	@Override
-	public List<Task> getAllTask(){
+	public List<TaskModel> getAllTask(){
 		
+		List<TaskModel> taskListFinal =new ArrayList<TaskModel>();
 		for (Task t1 :this.taskDao.findAll() ) {
 			System.out.println(t1.getTaskName());
 		}
-		return this.taskDao.findAll();
+		List<Task> taskList =  this.taskDao.findAll();
+		
+		for (Task task:taskList)
+		{
+			TaskModel taskLocal = getTaskModel(task);
+			taskListFinal.add(taskLocal);
+			
+		}
+		
+		return taskListFinal;
+		
 	}
+	
+	private Task getTaskFromModel (TaskModel taskModel)
+	{
+
+		Task task = new Task();
+		task.setParent(taskModel.getParent());
+		task.setProject(taskModel.getProject());
+		task.setTaskId(taskModel.getTaskId());
+		task.setUser(taskModel.getUser());
+		task.setStartDate(taskModel.getStartDate());
+		task.setStatus(taskModel.getStatus());
+		task.setPriority(taskModel.getPriority());
+		task.setTaskName(taskModel.getTaskName());
+		task.setEndDate(taskModel.getEndDate());
+		
+		return task;
+	
+	}
+	
+	private TaskModel getTaskModel(Task task)
+	{
+		TaskModel taskModel = new TaskModel();
+		taskModel.setParent(task.getParent());
+		taskModel.setProject(task.getProject());
+		taskModel.setTaskId(task.getTaskId());
+		taskModel.setUser(task.getUser());
+		taskModel.setStartDate(task.getStartDate());
+		taskModel.setStatus(task.getStatus());
+		taskModel.setPriority(task.getPriority());
+		taskModel.setTaskName(task.getTaskName());
+		taskModel.setEndDate(task.getEndDate());
+		
+		return taskModel;
+	}	
 	
 	@Override
 	public List<Parent> getAllParentTask(){
@@ -39,10 +84,11 @@ public class TaskServiceImpl implements TaskService {
 	}
 	
 	@Override
-	public Task addTask(Task task) {
-		System.out.println("user Id -- " +task.getUser().getFirstName());
+	public TaskModel addTask(TaskModel taskModel) {
 		
-		return this.taskDao.save(task);
+		Task task = getTaskFromModel(taskModel);
+		TaskModel returnTaskModel = getTaskModel(this.taskDao.save(task));
+		return returnTaskModel;
 	}
 	
 	@Override
@@ -53,17 +99,17 @@ public class TaskServiceImpl implements TaskService {
 	}
 	
 	@Override
-	public Task getTaskById(Long taskId) {
+	public TaskModel getTaskById(Long taskId) {
 	Optional<Task> opTask = this.taskDao.findById(taskId);
 			if (!opTask.isPresent()) {
 				throw new EmptyResultDataAccessException(1);
 			}
 			System.out.println("getTask by Id -- " +opTask.get().getProject().getProjectName());
-		return opTask.get();
+		return this.getTaskModel(opTask.get());
 	}
 	
 	@Override
-	public Task editTask(Task task, Long taskId) {
+	public TaskModel editTask(TaskModel task, Long taskId) {
 		 Optional<Task> task1 = this.taskDao.findById(taskId); 
 		 System.out.println("edit --" +task1.get().getTaskName());
 		 System.out.println("task object --" +task.getTaskName());
@@ -76,15 +122,15 @@ public class TaskServiceImpl implements TaskService {
 		 task1.get().setProject(task.getProject());
 		 task1.get().setPriority(task.getPriority());
 		 task1.get().setParent(task.getParent());
-		return this.taskDao.save(task1.get());
+		return getTaskModel(this.taskDao.save(task1.get()));
 	}
 	
 	@Override
-	public Task endTask(Long taskId) {
+	public TaskModel endTask(Long taskId) {
 		Optional<Task>  task = this.taskDao.findById(taskId);
 		task.get().setStatus("1");
 		task.get().setEndDate(LocalDate.now());
-		return this.taskDao.save(task.get());
+		return getTaskModel(this.taskDao.save(task.get()));
 	}
 	
 	

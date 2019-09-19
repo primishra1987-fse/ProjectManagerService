@@ -22,7 +22,6 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table (name = "task")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "taskId", scope = Task.class)
 public class Task {
 
 
@@ -34,13 +33,13 @@ public class Task {
 	@ManyToOne(fetch = FetchType.LAZY, optional = true)
 	@JoinColumn(name = "parentId")
 	@OnDelete(action = OnDeleteAction.CASCADE)
+	@JsonIgnore
 	private Parent parent;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	@JoinColumn(name = "projectId")
-	//@JsonBackReference
-	 @JsonIdentityReference(alwaysAsId = false)
+	@JsonBackReference
 	private Project project;
 	
 	

@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import iiht.sba.projectmanager.entity.Parent;
 import iiht.sba.projectmanager.entity.Task;
-
+import iiht.sba.projectmanager.model.TaskModel;
 import iiht.sba.projectmanager.service.TaskService;
 
 @RestController
@@ -30,9 +30,9 @@ public class TaskController {
 	
 	@CrossOrigin(origins = "*", maxAge = 3600)
 	@PostMapping(value = "/add", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public ResponseEntity<Task> addTask(@RequestBody Task task) {
-		System.out.println("Task Add request " +task.getParent().getParentTask());
-		return new ResponseEntity<Task>(this.taskService.addTask(task), HttpStatus.OK);
+	public ResponseEntity<TaskModel> addTask(@RequestBody TaskModel taskModel) {
+		
+		return new ResponseEntity<TaskModel>(this.taskService.addTask(taskModel), HttpStatus.OK);
 	}
 	
 	@CrossOrigin(origins = "*", maxAge = 3600)
@@ -53,16 +53,15 @@ public class TaskController {
 	
 	@CrossOrigin(origins = "*", maxAge = 3600)
 	@GetMapping(value = "/getAllTasks",  produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public  ResponseEntity<List<Task>> getAllTask() {
-		List<Task> taskList = this.taskService.getAllTask();
+	public  ResponseEntity<List<TaskModel>> getAllTask() {
+		List<TaskModel> taskList = this.taskService.getAllTask();
 		System.out.println(" Task list count - " +taskList.size());
-		System.out.println(" Second List Param:"+taskList.get(1).getTaskName());
-		return new ResponseEntity<List<Task>>(taskList, HttpStatus.OK);
+		return new ResponseEntity<List<TaskModel>>(taskList, HttpStatus.OK);
 	}
 	
 	@CrossOrigin(origins = "*", maxAge = 3600)
 	@PutMapping(value="/suspend/{taskId}",  produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-			public Task endTask(@PathVariable("taskId") Long taskId){
+			public TaskModel endTask(@PathVariable("taskId") Long taskId){
 			System.out.println(" end task request for task Id " +taskId);
 			
 			return taskService.endTask(taskId);
@@ -73,10 +72,10 @@ public class TaskController {
 	@CrossOrigin(origins = "http://localhost:4200") 
 	@RequestMapping(value = "/update/{taskId}", method = RequestMethod.PUT, produces = "application/json", consumes = {
 			"application/json" })
-	public Task editTask(@RequestBody Task task,@PathVariable("taskId") Long taskId){
+	public TaskModel editTask(@RequestBody TaskModel taskModel,@PathVariable("taskId") Long taskId){
 		System.out.println(" update task request for task Id " +taskId);
 		
-		return taskService.editTask(task,taskId);
+		return taskService.editTask(taskModel,taskId);
 		
 		
 	}
@@ -85,11 +84,11 @@ public class TaskController {
 	
 	@CrossOrigin(origins = "http://localhost:4200") 
 	@RequestMapping(value="/getTask/{taskId}", method=RequestMethod.GET)
-	public ResponseEntity<Task> getTask(@PathVariable("taskId") Long taskId) {
-		Task getTask = new Task();
+	public ResponseEntity<TaskModel> getTask(@PathVariable("taskId") Long taskId) {
+		TaskModel getTask = new TaskModel();
 		System.out.println(" get task with Id -- " + taskId);
 		getTask = taskService.getTaskById(taskId);
-		return new ResponseEntity<Task>(getTask, HttpStatus.OK);
+		return new ResponseEntity<TaskModel>(getTask, HttpStatus.OK);
 		//return ResponseEntity.ok().header("Custom-Header", "getTaskById").body(getTask);
 
 	}

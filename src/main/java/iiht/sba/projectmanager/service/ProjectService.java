@@ -11,4 +11,5 @@ public interface ProjectService {
 	Project addProject(Project project);
 	void suspendProject(Long projectId);
 	 Set<Task> getTaskListByProject(Long projectId); 
+	 int getCompletedTask(Long projectId);
 }
