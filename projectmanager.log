@@ -162,3 +162,265 @@
 2019-09-19 10:21:07 [http-nio-8096-exec-9] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
 2019-09-19 10:21:14 [http-nio-8096-exec-10] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
 2019-09-19 10:22:56 [http-nio-8096-exec-1] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
+2019-09-19 10:23:14 [http-nio-8096-exec-3] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
+2019-09-19 10:31:45 [main] INFO  i.s.p.TaskControllerTest - Starting TaskControllerTest on LAPTOP-460LOMEB with PID 22284 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:31:45 [main] INFO  i.s.p.TaskControllerTest - The following profiles are active: test
+2019-09-19 10:31:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:31:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149ms. Found 4 repository interfaces.
+2019-09-19 10:31:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc9b8bc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:31:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-19 10:31:49 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:31:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-19 10:31:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:31:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-19 10:31:49 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-19 10:31:49 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-19 10:31:50 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:31:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:31:53 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:31:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:31:53 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:31:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:31:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 27 ms
+2019-09-19 10:31:54 [main] INFO  i.s.p.TaskControllerTest - Started TaskControllerTest in 9.068 seconds (JVM running for 11.877)
+2019-09-19 10:31:55 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:31:55 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:31:55 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-19 10:31:55 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-19 10:32:48 [main] INFO  i.s.p.ProjectControllerTest - Starting ProjectControllerTest on LAPTOP-460LOMEB with PID 20428 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:32:48 [main] INFO  i.s.p.ProjectControllerTest - The following profiles are active: test
+2019-09-19 10:32:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:32:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 198ms. Found 4 repository interfaces.
+2019-09-19 10:32:52 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27eed4be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:32:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-19 10:32:52 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:32:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-19 10:32:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:32:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-19 10:32:53 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-19 10:32:53 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-19 10:32:53 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:32:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:32:56 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:32:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:32:57 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:32:57 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:32:57 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 36 ms
+2019-09-19 10:32:57 [main] INFO  i.s.p.ProjectControllerTest - Started ProjectControllerTest in 10.248 seconds (JVM running for 13.03)
+2019-09-19 10:32:58 [main] INFO  i.s.p.controller.ProjectController - Controller - suspend call for project.
+2019-09-19 10:32:58 [main] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
+2019-09-19 10:32:59 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:32:59 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:32:59 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-19 10:32:59 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-19 10:42:50 [main] INFO  i.s.p.ProjectControllerTest - Starting ProjectControllerTest on LAPTOP-460LOMEB with PID 14012 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:42:50 [main] INFO  i.s.p.ProjectControllerTest - The following profiles are active: test
+2019-09-19 10:42:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:42:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 165ms. Found 4 repository interfaces.
+2019-09-19 10:42:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e2263b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:42:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-19 10:42:54 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:42:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-19 10:42:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:42:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-19 10:42:54 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-19 10:42:54 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-19 10:42:55 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:42:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:42:58 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:42:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:42:58 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:42:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:42:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 22 ms
+2019-09-19 10:42:58 [main] INFO  i.s.p.ProjectControllerTest - Started ProjectControllerTest in 9.131 seconds (JVM running for 11.834)
+2019-09-19 10:42:59 [main] INFO  i.s.p.controller.ProjectController - Controller - suspend call for project.
+2019-09-19 10:42:59 [main] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
+2019-09-19 10:43:00 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:43:00 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:43:00 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-19 10:43:00 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-19 10:44:18 [main] INFO  i.s.p.ProjectControllerTest - Starting ProjectControllerTest on LAPTOP-460LOMEB with PID 17136 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:44:18 [main] INFO  i.s.p.ProjectControllerTest - The following profiles are active: test
+2019-09-19 10:44:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:44:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127ms. Found 4 repository interfaces.
+2019-09-19 10:44:21 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f876423] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:44:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-19 10:44:21 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:44:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-19 10:44:22 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:44:22 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-19 10:44:22 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-19 10:44:22 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-19 10:44:22 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:44:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:44:25 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:44:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:44:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:44:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:44:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 21 ms
+2019-09-19 10:44:26 [main] INFO  i.s.p.ProjectControllerTest - Started ProjectControllerTest in 9.04 seconds (JVM running for 11.531)
+2019-09-19 10:44:27 [main] INFO  i.s.p.controller.ProjectController - Controller - suspend call for project.
+2019-09-19 10:44:27 [main] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
+2019-09-19 10:44:27 [main] INFO  i.s.p.UserControllerTest - Starting UserControllerTest on LAPTOP-460LOMEB with PID 17136 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:44:27 [main] INFO  i.s.p.UserControllerTest - The following profiles are active: test
+2019-09-19 10:44:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:44:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 4 repository interfaces.
+2019-09-19 10:44:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f876423] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:44:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2019-09-19 10:44:27 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:44:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2019-09-19 10:44:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:44:28 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:44:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:44:28 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:44:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:44:29 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:44:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:44:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 16 ms
+2019-09-19 10:44:29 [main] INFO  i.s.p.UserControllerTest - Started UserControllerTest in 1.759 seconds (JVM running for 13.808)
+2019-09-19 10:44:29 [main] INFO  i.s.p.controller.UserController - <-- Inside getAllUsers -->
+2019-09-19 10:44:29 [main] INFO  i.s.p.controller.UserController - In User Controller - addUser
+2019-09-19 10:44:29 [main] INFO  i.s.p.controller.UserController - Controller - deleteUser call for User.
+2019-09-19 10:44:29 [main] INFO  i.s.p.TaskControllerTest - Starting TaskControllerTest on LAPTOP-460LOMEB with PID 17136 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:44:29 [main] INFO  i.s.p.TaskControllerTest - The following profiles are active: test
+2019-09-19 10:44:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:44:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 4 repository interfaces.
+2019-09-19 10:44:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f876423] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:44:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2019-09-19 10:44:29 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:44:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2019-09-19 10:44:29 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:44:29 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:44:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:44:30 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:44:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:44:30 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:44:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:44:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 9 ms
+2019-09-19 10:44:30 [main] INFO  i.s.p.TaskControllerTest - Started TaskControllerTest in 1.671 seconds (JVM running for 15.52)
+2019-09-19 10:44:31 [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:44:31 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:44:31 [Thread-9] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:44:31 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:44:31 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:44:31 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:44:31 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2019-09-19 10:44:31 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2019-09-19 10:44:31 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-19 10:44:31 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2019-09-19 10:44:31 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-19 10:44:31 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2019-09-19 10:46:32 [main] INFO  i.s.p.ProjectControllerTest - Starting ProjectControllerTest on LAPTOP-460LOMEB with PID 12420 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:46:32 [main] INFO  i.s.p.ProjectControllerTest - The following profiles are active: test
+2019-09-19 10:46:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:46:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 151ms. Found 4 repository interfaces.
+2019-09-19 10:46:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$778fd0b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:46:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-19 10:46:35 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:46:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-19 10:46:36 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:46:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-19 10:46:36 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-19 10:46:36 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-19 10:46:36 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:46:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:46:39 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:46:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:46:40 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:46:40 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:46:40 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 34 ms
+2019-09-19 10:46:40 [main] INFO  i.s.p.ProjectControllerTest - Started ProjectControllerTest in 8.587 seconds (JVM running for 11.148)
+2019-09-19 10:46:40 [main] INFO  i.s.p.controller.ProjectController - Controller - suspend call for project.
+2019-09-19 10:46:40 [main] INFO  i.s.p.controller.ProjectController - <-- Inside getAllProjects -->
+2019-09-19 10:46:40 [main] INFO  i.s.p.UserControllerTest - Starting UserControllerTest on LAPTOP-460LOMEB with PID 12420 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:46:40 [main] INFO  i.s.p.UserControllerTest - The following profiles are active: test
+2019-09-19 10:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 4 repository interfaces.
+2019-09-19 10:46:41 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$778fd0b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:46:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2019-09-19 10:46:41 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:46:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2019-09-19 10:46:41 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:46:41 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:46:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:46:42 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:46:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:46:42 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:46:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:46:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 20 ms
+2019-09-19 10:46:42 [main] INFO  i.s.p.UserControllerTest - Started UserControllerTest in 1.898 seconds (JVM running for 13.513)
+2019-09-19 10:46:42 [main] INFO  i.s.p.controller.UserController - <-- Inside getAllUsers -->
+2019-09-19 10:46:42 [main] INFO  i.s.p.controller.UserController - In User Controller - addUser
+2019-09-19 10:46:42 [main] INFO  i.s.p.controller.UserController - Controller - deleteUser call for User.
+2019-09-19 10:46:42 [main] INFO  i.s.p.TaskControllerTest - Starting TaskControllerTest on LAPTOP-460LOMEB with PID 12420 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 10:46:42 [main] INFO  i.s.p.TaskControllerTest - The following profiles are active: test
+2019-09-19 10:46:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 10:46:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 4 repository interfaces.
+2019-09-19 10:46:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$778fd0b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 10:46:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2019-09-19 10:46:43 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 10:46:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2019-09-19 10:46:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 10:46:43 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 10:46:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:46:44 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:46:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-19 10:46:44 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-09-19 10:46:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-09-19 10:46:44 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 12 ms
+2019-09-19 10:46:44 [main] INFO  i.s.p.TaskControllerTest - Started TaskControllerTest in 1.902 seconds (JVM running for 15.461)
+2019-09-19 10:46:45 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:46:45 [Thread-9] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:46:45 [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 10:46:45 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:46:45 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:46:45 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 10:46:45 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2019-09-19 10:46:45 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-19 10:46:45 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2019-09-19 10:46:45 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2019-09-19 10:46:45 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-19 10:46:45 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2019-09-19 11:24:02 [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-19 11:24:02 [Thread-22] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 11:24:02 [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2019-09-19 11:24:02 [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2019-09-19 11:24:03 [restartedMain] INFO  i.s.p.ProjectmanagerApplication - Starting ProjectmanagerApplication on LAPTOP-460LOMEB with PID 13620 (started by alokt in C:\FSE\Final Project\projectmanager\projectmanager)
+2019-09-19 11:24:03 [restartedMain] INFO  i.s.p.ProjectmanagerApplication - No active profile set, falling back to default profiles: default
+2019-09-19 11:24:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-19 11:24:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 4 repository interfaces.
+2019-09-19 11:24:03 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f205c68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-19 11:24:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8096 (http)
+2019-09-19 11:24:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-19 11:24:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-19 11:24:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-19 11:24:03 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 708 ms
+2019-09-19 11:24:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2019-09-19 11:24:03 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-19 11:24:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2019-09-19 11:24:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-19 11:24:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-19 11:24:04 [restartedMain] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1d043e6b'
+2019-09-19 11:24:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-19 11:24:04 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-19 11:24:04 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
